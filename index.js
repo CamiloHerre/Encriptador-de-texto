@@ -20,7 +20,7 @@ function encriptar (){
         figura.src = "./img/buscando.png";
         tituloMensaje.textContent = "Ningun mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-        alert("Debes ingresar algun texto");
+        swal("Heyy!!", "Debes ingresar un texto", "warning");
     }
 }
 
@@ -46,7 +46,7 @@ function desencriptar (){
         figura.src = "./img/buscando.png";
         tituloMensaje.textContent = "Ningun mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-        alert("Debes ingresar algun texto");
+        swal("Heyy!!", "Debes ingresar un texto", "warning");
         }                    
 
 }
