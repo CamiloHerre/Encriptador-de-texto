@@ -61,6 +61,7 @@
 
 .botones{
     display: flex;
+    column-gap: 5px;
     flex-direction: row;
     align-items: flex-start;
     padding: 1% 0;
@@ -75,7 +76,7 @@
     justify-content: center;
     padding: 2%;
     gap: 8px;
-    width: 25%;
+    width: 13%;
     background-color: #0B0B88DD;
     border-radius: 24px;
     font-family: "Inter";
@@ -93,7 +94,42 @@
     justify-content: center;
     padding: 2%;
     gap: 8px;
-    width: 25%;
+    width: 13%;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color:#0A3871;
+}
+
+.btn-copiar {
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 13%;
+    background-color:  #0B0B88DD;
+    border-radius: 24px;
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    color: #D8DFE8;
+}
+
+.btn-borrar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 13%;
     background: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -105,9 +141,9 @@
     color: #0A3871;
 }
 
-.btn-desencriptar:hover, .btn-encriptar:hover {
+.btn-desencriptar:hover, .btn-encriptar:hover, .btn-borrar:hover, .btn-copiar:hover {
     margin: 0.5%;
-    width: 23%;
+    width: 15%;
     padding: 2%;
 }
 
@@ -162,16 +198,17 @@
 .encriptado img {
     position: absolute;
     width: 70%;
-    height: 55%;
-    top: 10%;
+    height: 65%;
+    top: 3%;
+    filter: drop-shadow(0 0 30px rgba(22, 4, 50, 0.9));
 }
 
 /* Responsive Design */
 
-@media (max-width: 57.5em) {
+@media (max-width: 55em) {
     .container {
         display: flex;
-        flex-direction: row;
+        flex-direction: row;  
     }
     .encriptar {
         width: 100%;
@@ -183,42 +220,50 @@
         top: 5%;
     }
     .terminos {
-        width: 80%;
+        width: 60%;
         left: 10%;
         top: 67%;
     }
     .terminos p {
-        font-size: 16px;
+        font-size: 13px;
     }
     .botones {
         width: 80%;
         left: 10%;
-        top: 70%;
+        top: 50%;
     }
-    .btn-encriptar, .btn-desencriptar {
-        width: 48%;
+    .btn-encriptar, .btn-desencriptar, .btn-borrar, .btn-copiar {
+        width: 25%;
         border-radius: 16px;
+        font-size: 2vw;
     }
-    .btn-encriptar:hover, .btn-desencriptar:hover {
+    .btn-encriptar:hover, .btn-desencriptar:hover, .btn-borrar:hover, .btn-copiar:hover {
         margin: 0.3%;
-        width: 47.5%;
+        width: 35%;
         padding: 2%;
     }
     .encriptado {
-        width: 80%;
-        height: 15%;
+        width: 70%;
+        height: 17%;
         left: 10%;
         top: 80%;
     }
     .mensaje-encriptado {
-        width: 100%;
-        top: 25%;
-        left: 15%;
+        top: 5%;
+        left: 8%; 
     }
+
+    .mensaje-encriptado h2 {
+        font-size: 2vw;
+    }
+
+    .mensaje-encriptado p {
+        font-size: 2vw;
+    }
+
     .encriptado img {
-        width: 30%;
-        height: 100%;
-        left: 5%;
-        top: 0%;
+        max-width: 10%;
+        left: 10%;
+        top: 7%;
     }
 }
