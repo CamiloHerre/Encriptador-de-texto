@@ -10,6 +10,13 @@
     background: #F3F5FC;
 }
 
+.logo-alura {    
+    position: absolute;
+    top: 3%;
+    left: 2%;
+
+}
+
 .texto {
     position: absolute;
     width: 42%;
