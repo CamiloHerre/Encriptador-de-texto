@@ -225,7 +225,7 @@
         width: 80%;
         height: 60%;
         left: 10%;
-        top: 5%;
+        top: 15%;
     }
     .terminos {
         width: 60%;
@@ -257,12 +257,12 @@
         top: 80%;
     }
     .mensaje-encriptado {
-        top: 5%;
+        top: 25%;
         left: 8%; 
     }
 
     .mensaje-encriptado h2 {
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     .mensaje-encriptado p {
@@ -270,8 +270,8 @@
     }
 
     .encriptado img {
-        max-width: 10%;
-        left: 10%;
-        top: 7%;
+        max-width: 18%;
+        left: 6%;
+        top: 10%;
     }
 }
